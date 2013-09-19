@@ -1,6 +1,6 @@
 # to-title-case
 
-  Convert a non-title-case string to a title-case string.
+  Convert a string to a title case.
 
 ## Installation
 
