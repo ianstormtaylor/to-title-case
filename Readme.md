@@ -5,6 +5,7 @@
 ## Installation
 
     $ component install ianstormtaylor/to-title-case
+    $ npm install to-title-case
 
 ## Example
 

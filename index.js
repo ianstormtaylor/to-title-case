@@ -1,8 +1,13 @@
 
-var capital = require('to-capital-case')
-  , escape = require('escape-regexp')
-  , map = require('map')
-  , minors = require('title-case-minors');
+try {
+  var escape = require('escape-regexp');
+} catch (e) {
+  var escape = require('escape-regexp-component');
+}
+
+var capital = require('to-capital-case');
+var map = require('map');
+var minors = require('title-case-minors');
 
 
 /**
