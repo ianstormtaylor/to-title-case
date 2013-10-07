@@ -2,12 +2,12 @@
   "name": "to-title-case",
   "repository": "git://github.com/ianstormtaylor/to-title-case.git",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert a string to title case.",
   "keywords": ["title", "case", "titlecase", "string"],
   "dependencies": {
     "escape-regexp-component": "1.0.2",
-    "map": "ianstormtaylor/map#0.0.2",
+    "map": "ianstormtaylor/map#0.1.0",
     "title-case-minors": "0.0.2",
     "to-capital-case": "0.1.1"
   }
