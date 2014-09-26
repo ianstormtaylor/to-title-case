@@ -6,7 +6,6 @@ try {
 }
 
 var capital = require('to-capital-case');
-var map = require('map');
 var minors = require('title-case-minors');
 
 
@@ -21,7 +20,7 @@ module.exports = toTitleCase;
  * Minors.
  */
 
-var escaped = map(minors, escape);
+var escaped = minors.map(escape);
 var minorMatcher = new RegExp('[^^]\\b(' + escaped.join('|') + ')\\b', 'ig');
 var colonMatcher = /:\s*(\w)/g;
 
