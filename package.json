@@ -2,7 +2,7 @@
   "name": "to-title-case",
   "repository": "git://github.com/ianstormtaylor/to-title-case.git",
   "license": "MIT",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Convert a string to title case.",
   "keywords": [
     "title",
