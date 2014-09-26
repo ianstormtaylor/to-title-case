@@ -12,7 +12,6 @@
   ],
   "dependencies": {
     "component/escape-regexp": "1.0.2",
-    "ianstormtaylor/map": "0.1.0",
     "ianstormtaylor/title-case-minors": "0.0.2",
     "ianstormtaylor/to-capital-case": "0.1.1"
   },
