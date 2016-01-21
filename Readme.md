@@ -1,5 +1,5 @@
 
-# to-title-case [![Build Status](https://travis-ci.org/ianstormtaylor/to-space-case.svg?branch=master)](https://travis-ci.org/ianstormtaylor/to-space-case)
+# to-title-case [![Build Status](https://travis-ci.org/ianstormtaylor/to-title-case.svg?branch=master)](https://travis-ci.org/ianstormtaylor/to-title-case)
 
 Convert a string to a title case. Part of the series of [case helpers](https://github.com/ianstormtaylor/to-case).
 
@@ -14,9 +14,9 @@ $ npm install to-title-case
 ## Example
 
 ```js
-var toTitleCase = require('to-title-case');
+var toTitleCase = require('to-title-case')
 
-toTitleCase('the catcher in the rye'); 
+toTitleCase('the catcher in the rye') 
 // "The Catcher in the Rye"
 ```
 
