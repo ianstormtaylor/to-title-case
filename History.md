@@ -1,4 +1,11 @@
 
+1.0.0 - January 21, 2016
+------------------------
+* drop component support
+* cleanup readme
+* add travis ci
+* update coding style
+
 0.1.5 - September 26, 2014
 --------------------------
 * remove unnecessary `map` dependency

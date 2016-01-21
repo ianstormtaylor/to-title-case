@@ -1,44 +1,38 @@
 
-try {
-  var escape = require('escape-regexp');
-} catch (e) {
-  var escape = require('escape-regexp-component');
-}
-
-var capital = require('to-capital-case');
-var minors = require('title-case-minors');
-
+var sentence = require('to-sentence-case')
+var escape = require('escape-regexp-component')
+var minors = require('title-case-minors')
 
 /**
- * Expose `toTitleCase`.
+ * Export.
  */
 
-module.exports = toTitleCase;
-
+module.exports = toTitleCase
 
 /**
- * Minors.
+ * Matchers.
  */
 
-var escaped = minors.map(escape);
-var minorMatcher = new RegExp('[^^]\\b(' + escaped.join('|') + ')\\b', 'ig');
-var colonMatcher = /:\s*(\w)/g;
-
+var escaped = minors.map(escape)
+var minorMatcher = new RegExp('[^^]\\b(' + escaped.join('|') + ')\\b', 'ig')
+var punctuationMatcher = /:\s*(\w)/g
 
 /**
- * Convert a `string` to camel case.
+ * Convert a `string` to title case.
  *
  * @param {String} string
  * @return {String}
  */
 
-
-function toTitleCase (string) {
-  return capital(string)
-    .replace(minorMatcher, function (minor) {
-      return minor.toLowerCase();
+function toTitleCase(string) {
+  return sentence(string)
+    .replace(/(^|\s)(\w)/g, function (matches, previous, letter) {
+      return previous + letter.toUpperCase()
     })
-    .replace(colonMatcher, function (letter) {
-      return letter.toUpperCase();
-    });
+    .replace(minorMatcher, function (minor) {
+      return minor.toLowerCase()
+    })
+    .replace(punctuationMatcher, function (letter) {
+      return letter.toUpperCase()
+    })
 }
